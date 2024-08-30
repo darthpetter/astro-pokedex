@@ -1,0 +1,11 @@
+---
+import { Image } from 'astro:assets'
+import logoPokemon from '../assets/images/pokemon_logo.png'
+---
+<header class="bg-[#1A1C21] text-neutral-400 p-6 shadow-md">
+    <div class="w-full flex items-center justify-center">
+        <a href="/">
+            <Image src={logoPokemon} alt='Logo of pokemon' class="w-40"></Image>
+        </a>
+    </div>
+</header>

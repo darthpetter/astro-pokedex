@@ -1,0 +1,15 @@
+---
+interface Props{
+    title:string,
+    href:string
+}
+const {title,href}=Astro.props
+---
+<a href={href} class="w-1/2">
+    <div class="hover:text-[#20CBB8] active:text-[#81BAC3] p-6 bg-neutral-900  hover:shadow-lg hover:shadow-[#20CBB8]/5">
+        <div class="flex gap-4 items-center">
+            <slot name="icon"/>
+            <span class="text-xl press-start-2p-regular">{title}</span>
+        </div>
+    </div>
+</a>
